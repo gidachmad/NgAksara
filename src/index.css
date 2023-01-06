@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  @apply min-w-[6rem]
+  bg-coffee-500 py-2 px-4 rounded-md 
+  text-white text-center
+  hover:bg-coffee-700;
+}
+
+.hover-transition {
+  @apply duration-300 transition-all;
+}
+
+.section {
+  @apply flex flex-col justify-center min-h-screen;
+}
