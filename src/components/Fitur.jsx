@@ -10,7 +10,7 @@ export default function Fitur({ img, title, text }) {
       <div className='basis-3/5'>
         <h3 className='text-2xl mb-4'>{title}</h3>
         <p className='text-xl mb-6'>{text}</p>
-        <button className='px-6 py-2 bg-coffee-500 text-white rounded hover:shadow-lg'>
+        <button className='px-6 py-2 bg-coffee-500 text-white rounded hover:shadow-lg hover:bg-coffee-600 hover-transition'>
           Lihat Kelas
         </button>
       </div>
