@@ -16,6 +16,7 @@ export default function Dashboard() {
 
       {dashboardText.map((item) => (
         <DashboardText
+          key={JSON.stringify(item.img)}
           title={item.title}
           text={item.text}
           img={item.img}
@@ -28,7 +29,13 @@ export default function Dashboard() {
           <h2 className='text-center text-5xl'>Fitur</h2>
         </header>
         {fiturText.map((item) => (
-          <Fitur title={item.title} text={item.text} img={item.img} />
+          <Fitur
+            key={item.title}
+            title={item.title}
+            text={item.text}
+            path={item.path}
+            img={item.img}
+          />
         ))}
       </section>
     </>

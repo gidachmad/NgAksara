@@ -20,12 +20,11 @@ export default function Navbar() {
         <nav className='ml-auto'>
           <ul className='flex space-x-6'>
             {route.map((item) => (
-              <Link
-                key={item.name}
-                to={`${item.path}`}
-                className='button hover-transition'>
-                {item.name}
-              </Link>
+              <li key={item.name} className='basis-1'>
+                <Link to={`${item.path}`} className='button hover-transition'>
+                  {item.name}
+                </Link>
+              </li>
             ))}
           </ul>
         </nav>

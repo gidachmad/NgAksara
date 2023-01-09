@@ -4,7 +4,18 @@ import { route } from './Routes'
 
 const Router = () => {
   const pageRoutes = route.map((item) => {
-    return (
+    return item.children ? (
+      <Route key={item.name} path={`${item.path}`}>
+        <Route index element={item.element} />
+        {item.children.map((child) => (
+          <Route
+            key={child.name}
+            path={`/${item.path}/${child.path}`}
+            element={child.element}
+          />
+        ))}
+      </Route>
+    ) : (
       <Route key={item.name} path={`${item.path}`} element={item.element} />
     )
   })

@@ -18,10 +18,12 @@ export const fiturText = [
     title: 'Kelas',
     text: 'Pelajari aksara Sunda dimulai dari Aksara Swara, Ngalagena, Angka, Rarangken dilengkapi dengan contoh yang banyak!',
     img: 'class-dashboard',
+    path: 'kelas',
   },
   {
     title: 'Konverter',
     text: 'Ubah kalimat Latin ke dalam Aksara Sunda dalam bentuk format gambar yang bisa diunduh!',
     img: 'konverter-dashboard',
+    path: 'konverter',
   },
 ]

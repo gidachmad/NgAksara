@@ -7,14 +7,14 @@ html {
 }
 
 .button {
-  @apply min-w-[6rem]
-  bg-coffee-500 py-2 px-4 rounded-md 
-  text-white text-center
+  @apply min-w-[8rem] w-2/5
+  bg-coffee-500 py-3 px-6 rounded-md 
+  text-white text-center capitalize
   hover:bg-coffee-600 hover:shadow-md;
 }
 
 .hover-transition {
-  @apply duration-300 transition-all;
+  @apply duration-200 transition-all;
 }
 
 .section {
