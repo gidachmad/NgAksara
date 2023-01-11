@@ -12,7 +12,7 @@ export default function Fitur({ img, title, text, path }) {
         <h3 className='text-2xl mb-4'>{title}</h3>
         <p className='text-xl mb-6'>{text}</p>
         <Link to={`/${path}`} className='button hover-transition'>
-          Lihat Kelas
+          Lihat {title}
         </Link>
       </div>
     </article>

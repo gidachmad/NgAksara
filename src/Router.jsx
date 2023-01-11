@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import App from './App'
+import DynamicAksara from './layouts/Kelas/DynamicAksara'
+import NotFound from './layouts/NotFound'
 import { route } from './Routes'
 
 const Router = () => {
@@ -8,11 +10,18 @@ const Router = () => {
       <Route key={item.name} path={`${item.path}`}>
         <Route index element={item.element} />
         {item.children.map((child) => (
-          <Route
-            key={child.name}
-            path={`/${item.path}/${child.path}`}
-            element={child.element}
-          />
+          <>
+            <Route
+              key={child.name}
+              path={`/${item.path}/${child.path}`}
+              element={child.element}
+            />
+            <Route
+              key={child.name}
+              path={`/${item.path}/${child.path}/:name`}
+              element={<DynamicAksara />}
+            />
+          </>
         ))}
       </Route>
     ) : (
@@ -23,6 +32,7 @@ const Router = () => {
   return (
     <Routes>
       <Route element={<App />}>{pageRoutes}</Route>
+      <Route path='*' element={<NotFound />} />
     </Routes>
   )
 }

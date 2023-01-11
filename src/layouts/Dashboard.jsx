@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import ngaksaraBanner from '../assets/dashboard/ngaksara-banner.png'
 import DashboardText from '../components/DashboardText'
 import { dashboardText, fiturText } from '../mocks/mock-dasboard'
@@ -24,7 +24,7 @@ export default function Dashboard() {
         />
       ))}
 
-      <section className='bg-coffee-300 section space-y-12'>
+      <section className='bg-coffee-300 section space-y-8 py-12'>
         <header className='my-4'>
           <h2 className='text-center text-5xl'>Fitur</h2>
         </header>

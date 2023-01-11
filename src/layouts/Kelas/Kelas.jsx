@@ -22,7 +22,9 @@ export default function Kelas() {
           <div className='basis-2/5'>
             <h2 className='text-3xl mb-8 capitalize'>{kelas.name}</h2>
             <button>
-              <Link to={`/${kelas.name}`} className='button hover-transition '>
+              <Link
+                to={`/kelas/${kelas.name}`}
+                className='button hover-transition '>
                 Belajar
               </Link>
             </button>
