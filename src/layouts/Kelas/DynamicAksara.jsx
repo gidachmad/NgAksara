@@ -12,7 +12,7 @@ export default function DynamicAksara() {
   return (
     <div>
       DynamicAksara {data[0].name}
-      <img src={getKelasAksara('Swara', data[0].name)} alt='' />
+      <img src={getKelasAksara('Swara', data[0].img)} alt='' />
     </div>
   )
 }

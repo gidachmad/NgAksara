@@ -12,6 +12,7 @@ export default function Swara() {
       <section className='grid grid-cols-6 gap-4 w-5/6 mx-auto mb-10'>
         {aksaraSwara.map((aksara) => (
           <Link
+            key={aksara.name}
             to={`/kelas/swara/${aksara.name}`}
             className='p-6 bg-coffee-300 border rounded-lg shadow-inner hover:bg-coffee-400 hover-transition flex flex-col items-center'>
             <img

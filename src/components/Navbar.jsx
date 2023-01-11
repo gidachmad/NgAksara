@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom'
 import ngaksaraLogo from '../assets/ngaksara-logo.png'
-import { route } from '../Routes'
+import { route } from '../routes/Routes'
 
 export default function Navbar() {
   const [isLightTheme, setIsLightTheme] = useState(true)
