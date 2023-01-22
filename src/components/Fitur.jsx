@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { getImage } from '../utils/utils'
+import { getImage } from '@/utils/utils'
 
 export default function Fitur({ img, title, text, path }) {
   return (

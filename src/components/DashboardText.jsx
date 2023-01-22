@@ -1,5 +1,5 @@
+import { getImage } from '@/utils/utils'
 import React from 'react'
-import { getImage } from '../utils/utils'
 
 export default function DashboardText({ title, text, img, option }) {
   return (

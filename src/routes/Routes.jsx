@@ -1,7 +1,7 @@
-import Dashboard from '../layouts/Dashboard'
-import Kelas from '../layouts/Kelas/Kelas'
-import Swara from '../layouts/Kelas/Swara'
-import Konverter from '../layouts/Konverter'
+import Dashboard from '@/layouts/Dashboard'
+import Kelas from '@/layouts/Kelas/Kelas'
+import Swara from '@/layouts/Kelas/Swara'
+import Konverter from '@/layouts/Konverter'
 
 export const route = [
   {

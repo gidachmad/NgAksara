@@ -1,18 +1,18 @@
 import React from 'react'
-import ngaksaraBanner from '../assets/dashboard/ngaksara-banner.png'
-import DashboardText from '../components/DashboardText'
-import { dashboardText, fiturText } from '../mocks/mock-dasboard'
-import Fitur from '../components/Fitur'
+import ngaksaraBanner from '@/assets/dashboard/ngaksara-banner.png'
+import DashboardText from '@/components/DashboardText'
+import { dashboardText, fiturText } from '@/mocks/mock-dasboard'
+import Fitur from '@/components/Fitur'
 import { toSundanese } from 'sunda.js'
 
 export default function Dashboard() {
   return (
     <>
-      <header className='w-3/5 mx-auto py-24'>
-        <h1 className='text-center text-5xl mb-28'>
+      <header className='w-3/5 mx-auto py-2 pb-28'>
+        <h1 className='text-center text-5xl mb-20'>
           Selamat datang di NgAksara!
         </h1>
-        <img src={ngaksaraBanner} alt='' className='' />
+        <img src={ngaksaraBanner} alt='' className='mb-10' />
       </header>
 
       {dashboardText.map((item) => (

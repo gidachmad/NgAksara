@@ -1,8 +1,8 @@
 import React from 'react'
 
 import { Link } from 'react-router-dom'
-import { daftarKelas } from '../../mocks/mock-kelas'
-import { getThumbnailKelas } from '../../utils/utils'
+import { daftarKelas } from '@/mocks/mock-kelas'
+import { getThumbnailKelas } from '@/utils/utils'
 
 export default function Kelas() {
   return (
@@ -25,7 +25,7 @@ export default function Kelas() {
               <Link
                 to={`/kelas/${kelas.name}`}
                 className='button hover-transition '>
-                Belajar
+                Belajar {kelas.name}
               </Link>
             </button>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { aksaraSwara } from '../../mocks/kelas-swara'
-import { getKelasAksara } from '../../utils/utils'
+import { aksaraSwara } from '@/mocks/kelas-swara'
+import { getKelasAksara } from '@/utils/utils'
 
 export default function DynamicAksara() {
   const { name } = useParams()
