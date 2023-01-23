@@ -26,3 +26,7 @@ html {
 .section {
   @apply flex flex-col justify-center min-h-screen;
 }
+
+.header-style {
+  @apply text-center text-4xl mb-8;
+}

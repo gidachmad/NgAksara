@@ -6,7 +6,7 @@ export default function Swara() {
   return (
     <>
       <header>
-        <h1 className='text-center text-4xl mb-8'>Swara</h1>
+        <h1 className='header-style'>Swara</h1>
       </header>
 
       <GridCharacter kelas={'Swara'} aksara={aksaraSwara} />

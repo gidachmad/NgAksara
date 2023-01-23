@@ -3,8 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function GridCharacter({ kelas, aksara }) {
-  console.log(kelas)
-  console.log(aksara)
+  console.log({ kelas })
+  console.log({ aksara })
   return (
     <section className='grid grid-cols-6 gap-4 w-5/6 mx-auto mb-10'>
       {aksara.map((item) => (

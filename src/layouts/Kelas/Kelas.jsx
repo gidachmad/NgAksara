@@ -8,10 +8,12 @@ export default function Kelas() {
   return (
     <>
       <header>
-        <h1 className='text-center text-4xl mb-8'>Daftar Kelas</h1>
+        <h1 className='header-style'>Daftar Kelas</h1>
       </header>
-      {daftarKelas.map((kelas) => (
-        <section className='flex px-10 py-20 mx-auto w-3/5 justify-around items-center border-b-2 last:mb-10 last:border-0'>
+      {daftarKelas.map((kelas, index) => (
+        <section
+          key={index}
+          className='flex px-10 py-20 mx-auto w-3/5 justify-around items-center border-b-2 last:mb-10 last:border-0'>
           <div className='basis-2/5'>
             <img
               src={getThumbnailKelas(kelas.img)}

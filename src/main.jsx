@@ -6,21 +6,20 @@ import Router from './routes/Router'
 import { configure } from 'react-hotkeys'
 
 configure({
-  ignoreEventsCondition: () => {
-    return false
-  },
+  ignoreEventsCondition: () => {},
   ignoreTags: ['input', 'select', 'textarea'],
   customKeyCodes: {
+    32: 'SPACE_BAR',
     10009: 'inserteacute',
   },
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Suspense fallback={<>loading ...</>}>
-        <Router />
-      </Suspense>
-    </BrowserRouter>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <BrowserRouter>
+    <Suspense fallback={<>loading ...</>}>
+      <Router />
+    </Suspense>
+  </BrowserRouter>
+  // </React.StrictMode>
 )

@@ -6,18 +6,6 @@ export default function Konverter() {
   const [latin, setLatin] = useState('')
   const [sunda, setSunda] = useState('')
 
-  const keyMap = {
-    INSERT_E_ACUTE: 'Control+Alt+e',
-  }
-
-  const inserteacute = (event) => {
-    console.log('is clicekd')
-    console.log(event)
-  }
-  const handlers = {
-    INSERT_E_ACUTE: inserteacute,
-  }
-
   const convertToSunda = (e) => {
     const word = e.target.value
 
@@ -25,37 +13,49 @@ export default function Konverter() {
     setSunda(toSundanese(word))
   }
 
-  const insertEAcute = (e) => {
-    const word = e.target.textContent
+  const insertEAcute = () => {
+    const word = latin + 'é'
 
-    setLatin(latin + word)
-    setSunda(toSundanese(latin + word))
+    setLatin(word)
+    setSunda(toSundanese(word))
+  }
+
+  const keyMap = {
+    INSERT_E_ACUTE: 'Control+Alt+e',
+    // this is a workaraound when spacebar is pressed the hotkeys is stopped
+    GRAB_CURSOR: { sequence: 'SPACE_BAR', action: 'keydown' },
+    DEFAULT_CURSOR: { sequence: 'SPACE_BAR', action: 'keyup' },
+  }
+
+  const handlers = {
+    INSERT_E_ACUTE: insertEAcute,
   }
 
   return (
     <>
-      <HotKeys handlers={handlers} keyMap={keyMap}>
-        <button
-          className='p-10 border border-coffee-500'
-          onClick={insertEAcute}>
-          &eacute;
-        </button>
-        <div>
-          <input
-            type='text'
-            className='border border-coffee-500'
-            value={latin}
-            onChange={convertToSunda}
-          />
+      <header>
+        <h1 className='header-style'> Konverter </h1>
+      </header>
+      <div className='flex mx-auto w-4/5 mb-20 justify-around '>
+        <div className='basis-2/5 bg-coffee-200 px-4 py-8 rounded-md'>
+          <h2 className='text-center text-2xl mb-4 '> Aksara Latin</h2>
+          <HotKeys handlers={handlers} keyMap={keyMap} allowChanges>
+            <textarea
+              type='text'
+              className='border border-coffee-500 resize-none w-full aspect-video text-xl p-2 rounded-md'
+              value={latin}
+              onChange={convertToSunda}></textarea>
+          </HotKeys>
         </div>
-        <div>
-          <input
+        <div className='basis-2/5 bg-coffee-200 px-4 py-8 rounded-md'>
+          <h2 className='text-center text-2xl mb-4'> Aksara Sunda </h2>
+          <textarea
             type='text'
-            className='border border-coffee-500'
+            className='border border-coffee-500 resize-none w-full aspect-video text-3xl p-2'
             value={sunda}
-          />
+            readOnly></textarea>
         </div>
-      </HotKeys>
+      </div>
     </>
   )
 }
