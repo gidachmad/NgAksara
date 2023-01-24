@@ -12,7 +12,7 @@ export const daftarKelas = [
     img: 'Ngalagena',
   },
   {
-    name: 'rarangken',
+    name: 'rarangkén',
     img: 'Rarangken',
   },
 ]

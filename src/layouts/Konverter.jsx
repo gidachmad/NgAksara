@@ -37,7 +37,7 @@ export default function Konverter() {
         <h1 className='header-style'> Konverter </h1>
       </header>
       <div className='flex mx-auto w-4/5 mb-20 justify-around '>
-        <div className='basis-2/5 bg-coffee-200 px-4 py-8 rounded-md'>
+        <div className='basis-2/6 bg-coffee-200 px-4 py-8 rounded-md'>
           <h2 className='text-center text-2xl mb-4 '> Aksara Latin</h2>
           <HotKeys handlers={handlers} keyMap={keyMap} allowChanges>
             <textarea
@@ -46,8 +46,18 @@ export default function Konverter() {
               value={latin}
               onChange={convertToSunda}></textarea>
           </HotKeys>
+          <p className='text-justify mt-1'>
+            Untuk memasukan huruf &eacute; ke dalam teks bisa tekan tombol
+            dibawah atau menekan kombinasi shortcut "Control + Alt + E" (untuk
+            desktop)
+          </p>
+          <button
+            onClick={insertEAcute}
+            className='py-1 px-4 border border-coffee-900 rounded-md mt-1 hover-transition hover:bg-coffee-900 hover:text-white'>
+            Tambah/Sisipkan &eacute;
+          </button>
         </div>
-        <div className='basis-2/5 bg-coffee-200 px-4 py-8 rounded-md'>
+        <div className='basis-3/6 bg-coffee-200 px-4 py-8 rounded-md'>
           <h2 className='text-center text-2xl mb-4'> Aksara Sunda </h2>
           <textarea
             type='text'

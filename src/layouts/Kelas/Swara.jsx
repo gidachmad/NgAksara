@@ -1,6 +1,6 @@
 import GridCharacter from '@/components/Kelas/GridCharacter'
 import React from 'react'
-import { aksaraSwara } from '@/mocks/kelas-swara'
+import { aksaraSwara } from '@/mocks/kelas'
 
 export default function Swara() {
   return (
@@ -9,7 +9,7 @@ export default function Swara() {
         <h1 className='header-style'>Swara</h1>
       </header>
 
-      <GridCharacter kelas={'Swara'} aksara={aksaraSwara} />
+      <GridCharacter kelas={'swara'} aksara={aksaraSwara} />
     </>
   )
 }

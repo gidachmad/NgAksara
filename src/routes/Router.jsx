@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import App from '@/App'
-import DynamicAksara from '@/layouts/Kelas/DynamicAksara'
+import DynamicAksara from '@/components/Kelas/DynamicAksara'
 import NotFound from '@/layouts/NotFound'
 import { route } from './Routes'
 
@@ -19,7 +19,7 @@ const Router = () => {
             <Route
               key={child.name + item.path}
               path={`/${item.path}/${child.path}/:name`}
-              element={<DynamicAksara />}
+              element={<DynamicAksara kelas={child.name} />}
             />
           </>
         ))}
