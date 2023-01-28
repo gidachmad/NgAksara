@@ -12,7 +12,7 @@ export default function GridCharacter({ kelas, aksara }) {
           className='p-6 bg-coffee-300 border rounded-lg shadow-inner hover:bg-coffee-400 hover-transition flex flex-col  items-center'>
           <div className='mb-2'>
             <img
-              src={getKelasAksara(kelas, item.img)}
+              src={getKelasAksara(item.img)}
               alt=''
               className='h-16 m-auto'
             />
