@@ -5,6 +5,7 @@ import { getKelasAksara } from '@/utils/utils'
 
 export default function DynamicAksara({ kelas }) {
   const { name } = useParams()
+  console.log(name)
   const [listAksara, setListAksara] = useState([])
 
   useEffect(() => {
