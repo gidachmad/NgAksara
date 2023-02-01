@@ -1,60 +1,93 @@
-import { getThumbnailKelas } from '@/utils/utils'
+import { aksaraRarangken } from '@/mocks/kelas'
+import { ScrollToTop } from '@/utils/ScrollToTop'
+import { getRarangkenThumb } from '@/utils/utils'
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
 
 export default function Rarangken() {
-  const rarangkenData = [
-    {
-      title: 'Aturan Rarangkén',
-      img: 'Rarangken',
-      desc: 'Lihat aturan-aturan penggunaan rarangkén dalam aksara sunda',
-      path: 'aturan',
-    },
-  ]
-
   return (
     <>
       <header>
         <h1 className='header-style'>Rarangkén</h1>
       </header>
 
-      <div className='flex justify-around w-4/5 mx-auto'>
-        {rarangkenData.map((data) => (
+      <section className='w-3/5 mx-auto mb-20'>
+        {aksaraRarangken.map((item) => (
           <Card
-            key={data.title}
-            title={data.title}
-            img={data.img}
-            desc={data.desc}
-            path={data.path}
+            name={item.name}
+            aksara={'ka'}
+            desc={item.desc}
+            key={item.name}
           />
         ))}
-
-        <Outlet />
-        {/* <Card
-          title={'Aturan Rarangkén'}
-          img={'Ngalagena'}
-          desc={'Lihat aturan penggunaan rarangkén'}
-          path={'contohrarangker'}
-        /> */}
-      </div>
+        <button className='bg-coffee-200 w-full p-4 rounded shadow-inner hover:bg-coffee-900 hover:text-coffee-200 hover-transition'>
+          Coba dengan aksara ngalagena
+        </button>
+      </section>
     </>
   )
 }
 
-function Card({ title, img, desc, path }) {
+function Card({ name, aksara, desc }) {
+  let aksaraWithRarangken
+  switch (name) {
+    case 'panghulu':
+      aksaraWithRarangken = aksara[0] + 'i'
+      break
+    case 'pamepet':
+      aksaraWithRarangken = aksara[0] + 'e'
+      break
+    case 'paneuleung':
+      aksaraWithRarangken = aksara[0] + 'eu'
+      break
+    case 'panglayar':
+      aksaraWithRarangken = aksara + 'r'
+      break
+    case 'panyecek':
+      aksaraWithRarangken = aksara + 'ng'
+      break
+    case 'panyuku':
+      aksaraWithRarangken = aksara[0] + 'u'
+      break
+    case 'panyakra':
+      aksaraWithRarangken = aksara[0] + 'r' + aksara[1]
+      break
+    case 'panyiku':
+      aksaraWithRarangken = aksara[0] + 'l' + aksara[1]
+      break
+    case 'panéléng':
+      aksaraWithRarangken = aksara[0] + 'é'
+      break
+    case 'panolong':
+      aksaraWithRarangken = aksara[0] + 'o'
+      break
+    case 'pamingkal':
+      aksaraWithRarangken = aksara[0] + 'y' + aksara[1]
+      break
+    case 'pangwisad':
+      aksaraWithRarangken = aksara + 'h'
+      break
+    case 'pamaéh':
+      aksaraWithRarangken = aksara[0]
+      break
+    default:
+      aksaraWithRarangken = name
+      break
+  }
+
   return (
-    <section className='basis-2/5 p-4 bg-coffee-300 border border-coffee-600 rounded-md shadow-md'>
-      <div className='bg-white rounded-md p-8 h-60 flex items-center'>
+    <section className='flex justify-around space-x-8 my-8'>
+      <div className='basis-1/6 flex px-10 py-8 border rounded-md border-coffee-900 aspect-square'>
         <img
-          src={getThumbnailKelas(img)}
+          src={getRarangkenThumb(aksaraWithRarangken)}
           alt=''
-          className='m-auto max-h-full'
+          className='m-auto w-full'
         />
       </div>
-      <h2 className='text-center text-2xl my-4'>{title}</h2>
-      <p className='text-justify text-xl '>{desc}</p>
 
-      <Link to={path}>lihat {path}</Link>
+      <div className='basis-full bg-coffee-200 p-4 rounded-md'>
+        <p className='text-2xl capitalize mb-2'>{name}</p>
+        <p className=''>{desc}</p>
+      </div>
     </section>
   )
 }

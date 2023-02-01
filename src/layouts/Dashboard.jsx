@@ -17,7 +17,7 @@ export default function Dashboard() {
 
       {dashboardText.map((item) => (
         <DashboardText
-          key={JSON.stringify(item.img)}
+          key={JSON.stringify(item.name)}
           title={item.title}
           text={item.text}
           img={item.img}

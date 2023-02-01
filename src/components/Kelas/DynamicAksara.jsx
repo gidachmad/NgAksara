@@ -32,7 +32,11 @@ export default function DynamicAksara({ kelas }) {
         <>
           <div className='w-fit mx-auto border border-coffee-800 p-10'>
             <img
-              src={getKelasAksara(listAksara[0].img)}
+              src={
+                listAksara[0].img
+                  ? getKelasAksara(listAksara[0].img)
+                  : getKelasAksara(listAksara[0].name)
+              }
               alt=''
               className='h-20 m-auto'
             />

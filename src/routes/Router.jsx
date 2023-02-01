@@ -27,13 +27,8 @@ export default function Router() {
             <Route
               key={child.name}
               path={`/${item.path}/${child.path}`}
-              element={child.element}>
-              <Route
-                key={child.children[0].name}
-                path={`/${item.path}/${child.path}/${child.children[0].path}`}
-                element={child.children[0].element}
-              />
-            </Route>
+              element={child.element}
+            />
             // <Route path='*' element={<NotFound />} />
           )
         })}
