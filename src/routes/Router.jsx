@@ -10,7 +10,7 @@ export default function Router() {
       <Route key={item.name + item.path} path={`${item.path}`}>
         <Route index element={item.element} />
         {item.children.map((child) => {
-          return !child.children ? (
+          return !child.static ? (
             <>
               <Route
                 key={child.name}

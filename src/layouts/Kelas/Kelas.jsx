@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Link } from 'react-router-dom'
-import { daftarKelas } from '@/mocks/mock-kelas'
+import { daftarKelas } from '@/mocks/kelas'
 import { getThumbnailKelas } from '@/utils/utils'
 
 export default function Kelas() {

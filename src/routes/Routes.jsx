@@ -37,13 +37,7 @@ export const route = [
         path: 'rarangkén',
         name: 'rarangkén',
         element: <Rarangken />,
-        children: [
-          {
-            path: 'aturan',
-            name: 'aturan',
-            element: <AturanRarangken />,
-          },
-        ],
+        static: true,
       },
     ],
   },
