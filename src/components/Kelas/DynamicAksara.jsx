@@ -6,7 +6,6 @@ import {
   aksaraRarangken,
   aksaraSwara,
 } from '@/mocks/kelas'
-import { getKelasAksara } from '@/utils/utils'
 import { toSundanese } from 'sunda.js'
 import { convertRarangken } from '@/utils/rarangken'
 
@@ -47,20 +46,11 @@ function Aksara({ listAksara, kelas }) {
     listAksara.length > 0 && (
       <>
         <div className='w-fit mx-auto border border-coffee-800 p-10'>
-          <p className='text-6xl'>
+          <p className='text-8xl'>
             {listAksara[0].unicode
               ? listAksara[0].unicode
               : toSundanese(listAksara[0].name)}
           </p>
-          {/* <img
-            src={
-              listAksara[0].img
-                ? getKelasAksara(listAksara[0].img)
-                : getKelasAksara(listAksara[0].name)
-            }
-            alt={`Aksara ${listAksara[0].name} dari ${kelas}`}
-            className='h-20 m-auto'
-          /> */}
         </div>
         <h3 className='capitalize text-center text-2xl mt-6'>
           {listAksara[0].name}

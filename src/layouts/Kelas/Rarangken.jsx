@@ -35,12 +35,14 @@ function Card({ rarangken, aksara, desc }) {
 
   return (
     <section className='flex justify-around space-x-8 my-8'>
-      <div className='basis-1/5 flex px-10 py-8 border rounded-md border-coffee-900 aspect-square'>
-        <h2 className='text-5xl m-auto'>{toSundanese(aksaraWithRarangken)}</h2>
+      <div className='basis-1/4 flex px-4 py-2 border rounded-md border-coffee-900 aspect-video'>
+        <h2 className='text-7xl m-auto'>{toSundanese(aksaraWithRarangken)}</h2>
       </div>
 
       <div className='basis-full bg-coffee-200 p-4 rounded-md'>
-        <p className='text-2xl capitalize mb-2'>{aksara}</p>
+        <p className='text-2xl capitalize mb-2'>
+          {aksara} {' -> '} {aksaraWithRarangken}
+        </p>
         <p className=''>{desc}</p>
       </div>
     </section>
