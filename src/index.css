@@ -4,7 +4,7 @@
 @font-face {
   font-family: 'Kairaga';
   src: local('KairagaRegular'),
-    url(./fonts/KairagaRegular.otf) format('opentype');
+    url('../src/fonts/KairagaRegular.otf') format('opentype');
 }
 /* @font-face {
   font-family: 'Sundanese';
@@ -15,7 +15,7 @@
 @tailwind utilities;
 
 html {
-  @apply font-display;
+  @apply font-kairaga;
 }
 
 .button {

@@ -16,13 +16,6 @@ export default function GridCharacter({ kelas, aksara }) {
             <p className='text-7xl'>
               {item.unicode ? item.unicode : toSundanese(item.name)}
             </p>
-            {/* <img
-              src={
-                item.img ? getKelasAksara(item.img) : getKelasAksara(item.name)
-              }
-              alt=''
-              className='h-16 m-auto'
-            /> */}
           </div>
           <p className='mt-auto text-xl capitalize'>{item.name}</p>
         </Link>
