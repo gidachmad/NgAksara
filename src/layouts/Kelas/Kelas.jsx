@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Link } from 'react-router-dom'
-import { daftarKelas } from '@/mocks/mock-kelas'
+import { daftarKelas } from '@/mocks/kelas'
 import { getThumbnailKelas } from '@/utils/utils'
 
 export default function Kelas() {
@@ -16,7 +16,7 @@ export default function Kelas() {
           className='flex px-10 py-20 mx-auto w-3/5 justify-around items-center border-b-2 last:mb-10 last:border-0'>
           <div className='basis-2/5'>
             <img
-              src={getThumbnailKelas(kelas.img)}
+              src={getThumbnailKelas(kelas.name)}
               alt=''
               className=' object-fill max-h-40 mx-auto'
             />

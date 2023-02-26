@@ -9,3 +9,11 @@ export const getThumbnailKelas = (name) => {
 export const getKelasAksara = (name) => {
   return new URL(`../assets/aksara/${name}.png`, import.meta.url).href
 }
+
+export const getRarangkenThumb = (name) => {
+  return new URL(`../assets/ngalagenaRarangken/${name}.png`, import.meta.url)
+    .href
+}
+export const getRarangken = (name) => {
+  return new URL(`../assets/rarangken/${name}.png`, import.meta.url).href
+}
