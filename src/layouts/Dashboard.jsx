@@ -24,8 +24,8 @@ export default function Dashboard() {
         />
       ))}
 
-      <section className='bg-coffee-300 lg:section space-y-8 py-12'>
-        <header className='my-4'>
+      <section className='bg-coffee-300 section space-y-6 lg:space-y-8 py-6 lg:py-12'>
+        <header className='my-1 lg:my-4'>
           <h2 className='text-center text-2xl md:text-3xl lg:text-4xl'>
             Fitur
           </h2>

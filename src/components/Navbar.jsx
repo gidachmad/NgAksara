@@ -13,7 +13,11 @@ export default function Navbar({ changeTheme, lightTheme }) {
       className='border-b-2 sticky top-0 bg-white dark:bg-gray-900 duration-300'>
       <div className='flex w-5/6 py-4 mx-auto items-center'>
         <Link to='/' className=''>
-          <img src={ngaksaraLogo} alt='Logo NgAksara' className='max-h-14' />
+          <img
+            src={ngaksaraLogo}
+            alt='Logo NgAksara'
+            className='max-h-10 lg:max-h-14'
+          />
         </Link>
         <nav className='ml-auto hidden lg:block'>
           <ul className='flex space-x-6'>
