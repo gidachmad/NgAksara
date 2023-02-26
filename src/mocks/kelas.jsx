@@ -59,67 +59,80 @@ export const aksaraNgalagena = [
 export const aksaraRarangken = [
   {
     name: 'panghulu',
-    symbol: '/a/',
+    symbol: '/i/',
+    unicode: '\u1ba4',
     desc: 'Berfungsi mengubah bunyi vokal suara aksara /a/ menjadi /i/',
   },
   {
     name: 'pamepet',
     symbol: '/e/',
+    unicode: '\u1ba8',
     desc: 'Berfungsi mengubah bunyi vokal suara aksara /a/ menjadi /e/',
   },
   {
     name: 'paneuleung',
     symbol: '/eu/',
+    unicode: '\u1ba9',
     desc: 'Berfungsi mengubah bunyi vokal suara aksara /a/ menjadi /eu/',
   },
   {
     name: 'panglayar',
     symbol: '+r',
+    unicode: '\u1b81',
     desc: 'Berfungsi menambah konsonan /+r/ pada akhir aksara',
   },
   {
     name: 'panyecek',
     symbol: '+ng',
+    unicode: '\u1b80',
     desc: 'Berfungsi menambah konsonan /+ng/ pada akhir aksara',
   },
   {
     name: 'panyuku',
     symbol: '/u/',
+    unicode: '\u1ba5',
     desc: 'Berfungsi mengubah bunyi vokal suara aksara /a/ menjadi /u/',
   },
   {
     name: 'panyakra',
     symbol: '-r-',
+    unicode: '\u1ba2',
     desc: 'Berfungsi menambah/menyispkan konsonan /-r-/ pada tengah aksara',
   },
   {
     name: 'panyiku',
     symbol: '-l-',
+    unicode: '\u1ba3',
     desc: 'Berfungsi menambah/menyispkan konsonan /-l-/ pada tengah aksara',
   },
   {
     name: 'panéléng',
     symbol: '/é/',
+    unicode: '\u1ba6',
     desc: 'Berfungsi mengubah bunyi vokal suara aksara /a/ menjadi /é/',
   },
   {
     name: 'panolong',
     symbol: '/o/',
+    unicode: '\u1ba7',
     desc: 'Berfungsi mengubah bunyi vokal suara aksara /a/ menjadi /o/',
   },
   {
     name: 'pamingkal',
     symbol: '-y-',
+    unicode: '\u1ba1',
     desc: 'Berfungsi menambah/menyispkan konsonan /-y-/ pada tengah aksara',
   },
   {
     name: 'pangwisad',
     symbol: '+h',
+    unicode: '\u1b82',
     desc: 'Berfungsi menambah konsonan /+h/ pada akhir aksara',
   },
   {
     name: 'pamaéh',
     symbol: '-...',
+    unicode: '\u1baa',
     desc: 'Berfungsi menghilangkan bunyi vokal pada aksara',
   },
 ]
