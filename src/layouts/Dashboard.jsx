@@ -3,7 +3,6 @@ import ngaksaraBanner from '@/assets/dashboard/ngaksara-banner.png'
 import DashboardText from '@/components/DashboardText'
 import { dashboardText, fiturText } from '@/mocks/mock-dasboard'
 import Fitur from '@/components/Fitur'
-import { toSundanese } from 'sunda.js'
 
 export default function Dashboard() {
   return (

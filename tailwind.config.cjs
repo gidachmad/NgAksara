@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       display: ['Ubuntu', 'sans'],
       sundanese: ['Sundanese'],
+      kairaga: ['Kairaga'],
     },
     extend: {
       colors: {

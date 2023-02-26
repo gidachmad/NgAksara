@@ -6,14 +6,13 @@ import {
   aksaraRarangken,
   aksaraSwara,
 } from '@/mocks/kelas'
-import { getKelasAksara, getRarangken } from '@/utils/utils'
+import { getKelasAksara } from '@/utils/utils'
 import { toSundanese } from 'sunda.js'
 import { convertRarangken } from '@/utils/rarangken'
 
 export default function DynamicAksara({ kelas }) {
   const { name } = useParams()
   const [listAksara, setListAksara] = useState([])
-  const [rarangken, setRarangken] = useState([])
 
   useEffect(() => {
     let data = []
@@ -48,7 +47,12 @@ function Aksara({ listAksara, kelas }) {
     listAksara.length > 0 && (
       <>
         <div className='w-fit mx-auto border border-coffee-800 p-10'>
-          <img
+          <p className='text-6xl'>
+            {listAksara[0].unicode
+              ? listAksara[0].unicode
+              : toSundanese(listAksara[0].name)}
+          </p>
+          {/* <img
             src={
               listAksara[0].img
                 ? getKelasAksara(listAksara[0].img)
@@ -56,7 +60,7 @@ function Aksara({ listAksara, kelas }) {
             }
             alt={`Aksara ${listAksara[0].name} dari ${kelas}`}
             className='h-20 m-auto'
-          />
+          /> */}
         </div>
         <h3 className='capitalize text-center text-2xl mt-6'>
           {listAksara[0].name}

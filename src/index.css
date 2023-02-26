@@ -1,16 +1,16 @@
 @tailwind base;
 @tailwind components;
 
-/* @font-face {
+@font-face {
   font-family: 'Kairaga';
   src: local('KairagaRegular'),
     url(./fonts/KairagaRegular.otf) format('opentype');
-} */
-@font-face {
+}
+/* @font-face {
   font-family: 'Sundanese';
   src: local('SundaneseUnicode'),
     url(./fonts/SundaneseUnicode-2.0.ttf) format('ttf');
-}
+} */
 
 @tailwind utilities;
 

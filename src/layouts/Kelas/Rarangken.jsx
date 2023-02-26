@@ -1,7 +1,5 @@
 import { aksaraRarangken } from '@/mocks/kelas'
 import { convertRarangken } from '@/utils/rarangken'
-import { ScrollToTop } from '@/utils/ScrollToTop'
-import { getKelasAksara } from '@/utils/utils'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { toSundanese } from 'sunda.js'
@@ -37,20 +35,12 @@ function Card({ rarangken, aksara, desc }) {
 
   return (
     <section className='flex justify-around space-x-8 my-8'>
-      <div className='basis-1/6 flex px-10 py-8 border rounded-md border-coffee-900 aspect-square'>
-        {/* <h2 className='w-fit mx-auto text-8xl mb-10 border border-coffee-800 p-10'>
-          {toSundanese(aksaraWithRarangken)}
-        </h2> */}
-        <h2 className='text-8xl m-auto'>{toSundanese(aksaraWithRarangken)}</h2>
-        {/* <img
-          src={getKelasAksara(aksaraWithRarangken)}
-          alt=''
-          className='m-auto w-full'
-        /> */}
+      <div className='basis-1/5 flex px-10 py-8 border rounded-md border-coffee-900 aspect-square'>
+        <h2 className='text-5xl m-auto'>{toSundanese(aksaraWithRarangken)}</h2>
       </div>
 
       <div className='basis-full bg-coffee-200 p-4 rounded-md'>
-        <p className='text-2xl capitalize mb-2'>{name}</p>
+        <p className='text-2xl capitalize mb-2'>{aksara}</p>
         <p className=''>{desc}</p>
       </div>
     </section>

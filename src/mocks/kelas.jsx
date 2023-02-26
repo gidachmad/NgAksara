@@ -6,16 +6,16 @@ export const daftarKelas = [
 ]
 
 export const aksaraAngka = [
-  { name: 'nol', number: 0, img: '0' },
-  { name: 'satu', number: 1, img: '1' },
-  { name: 'dua', number: 2, img: '2' },
-  { name: 'tiga', number: 3, img: '3' },
-  { name: 'empat', number: 4, img: '4' },
-  { name: 'lima', number: 5, img: '5' },
-  { name: 'enam', number: 6, img: '6' },
-  { name: 'tujuh', number: 7, img: '7' },
-  { name: 'delapan', number: 8, img: '8' },
-  { name: 'sembilan', number: 9, img: '9' },
+  { name: 'nol', number: 0, unicode: '\u1bb0' },
+  { name: 'satu', number: 1, unicode: '\u1bb1' },
+  { name: 'dua', number: 2, unicode: '\u1bb2' },
+  { name: 'tiga', number: 3, unicode: '\u1bb3' },
+  { name: 'empat', number: 4, unicode: '\u1bb4' },
+  { name: 'lima', number: 5, unicode: '\u1bb5' },
+  { name: 'enam', number: 6, unicode: '\u1bb6' },
+  { name: 'tujuh', number: 7, unicode: '\u1bb7' },
+  { name: 'delapan', number: 8, unicode: '\u1bb8' },
+  { name: 'sembilan', number: 9, unicode: '\u1bb9' },
 ]
 
 export const aksaraSwara = [
