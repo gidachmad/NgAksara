@@ -13,7 +13,7 @@ export default function Kelas() {
       {daftarKelas.map((kelas, index) => (
         <section
           key={index}
-          className='flex flex-col lg:flex-row px-10 py-6 lg:py-20 mx-auto w-3/4 lg:w-3/5 justify-around items-center border-b-2 last:mb-10 last:border-0'>
+          className='flex flex-col sm:flex-row px-8 py-10 md:py-20 mx-auto w-3/4 lg:w-3/5 justify-around items-center border-b-2 last:mb-10 last:border-0'>
           <div className='basis-2/5 mb-4'>
             <img
               src={getThumbnailKelas(kelas.name)}
@@ -22,7 +22,7 @@ export default function Kelas() {
             />
           </div>
           <div className='basis-2/5'>
-            <h2 className='text-center text-3xl mb-4 lg:mb-8 capitalize'>
+            <h2 className='text-center sm:text-left text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-8 capitalize'>
               {kelas.name}
             </h2>
             <button>

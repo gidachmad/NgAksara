@@ -6,7 +6,7 @@ import { toSundanese } from 'sunda.js'
 export default function GridCharacter({ kelas, aksara }) {
   ScrollToTop()
   return (
-    <section className='grid grid-cols-6 gap-4 w-5/6 mx-auto mb-10'>
+    <section className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 w-5/6 mx-auto mb-10'>
       {aksara.map((item) => (
         <Link
           key={item.name}

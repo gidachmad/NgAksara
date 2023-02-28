@@ -19,7 +19,7 @@ export default function Navbar({ changeTheme, lightTheme }) {
             className='max-h-10 lg:max-h-14'
           />
         </Link>
-        <nav className='ml-auto hidden lg:block'>
+        <nav className='ml-auto hidden md:block'>
           <ul className='flex space-x-6'>
             {route.map((item) => (
               <li key={item.name} className='basis-1'>
@@ -32,19 +32,19 @@ export default function Navbar({ changeTheme, lightTheme }) {
         </nav>
         <Bars3Icon
           onClick={() => setIsOpened(!isOpened)}
-          className='w-10 h-10 ml-auto border border-coffee-800 p-2 block lg:hidden hover:cursor-pointer'
+          className='w-10 h-10 ml-auto border border-coffee-800 p-2 block md:hidden hover:cursor-pointer'
         />
       </div>
 
       {/* mobile nav */}
-      <nav className='block lg:hidden relative w-full'>
+      <nav className='block md:hidden relative w-full'>
         {isOpened && (
-          <ul className='flex flex-col absolute bg-white w-full divide-y divide-coffee-800 border border-coffee-800 shadow-lg'>
+          <ul className='flex flex-col absolute bg-white w-full divide-y border shadow-lg '>
             {route.map((item) => (
               <Link
                 onClick={() => setIsOpened(!isOpened)}
                 to={`${item.path}`}
-                className='capitalize hover-transition'>
+                className='capitalize hover-transition focus:bg-coffee-800'>
                 <li key={item.name} className='basis-1 py-4 text-center'>
                   {item.name}
                 </li>
