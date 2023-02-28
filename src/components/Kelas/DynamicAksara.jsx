@@ -155,7 +155,7 @@ function Ngalagena({ listAksara }) {
           {toSundanese(aksara)}
         </h2>
         <h3 className='capitalize text-center text-2xl mt-6'>{aksara}</h3>
-        <section className='w-3/4 my-8 mx-auto grid grid-cols-5 gap-4'>
+        <section className='w-3/4 my-8 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
           {aksaraRarangken.map((rarangken) => (
             <div
               className='border border-coffee-900 rounded-md p-4 flex justify-evenly hover:bg-coffee-500 hover-transition hover:cursor-pointer'

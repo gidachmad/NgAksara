@@ -36,8 +36,8 @@ export default function Konverter() {
       <header>
         <h1 className='header-style'> Konverter </h1>
       </header>
-      <div className='flex mx-auto w-4/5 mb-20 justify-around '>
-        <div className='basis-2/6 bg-coffee-200 px-4 py-8 rounded-md'>
+      <div className='flex flex-col md:flex-row mx-auto w-4/5 mb-20 justify-around md:space-x-8'>
+        <div className='basis-2/5 bg-coffee-200 mb-4 md:mb-0 px-4 py-8 rounded-md self-auto'>
           <h2 className='text-center text-2xl mb-4 '> Aksara Latin</h2>
           <HotKeys handlers={handlers} keyMap={keyMap} allowChanges>
             <textarea
@@ -57,7 +57,7 @@ export default function Konverter() {
             Tambah/Sisipkan &eacute;
           </button>
         </div>
-        <div className='basis-3/6 bg-coffee-200 px-4 py-8 rounded-md'>
+        <div className='basis-3/5 bg-coffee-200 px-4 py-8 rounded-md'>
           <h2 className='text-center text-2xl mb-4'> Aksara Sunda </h2>
           <textarea
             type='text'
