@@ -11,7 +11,7 @@ export default function GridCharacter({ kelas, aksara }) {
         <Link
           key={item.name}
           to={`/kelas/${kelas}/${item.name}`}
-          className='p-6 bg-coffee-300 border rounded-lg shadow-inner hover:bg-coffee-400 hover-transition flex flex-col  items-center'>
+          className='p-6 bg-coffee-300 border rounded-lg shadow-inner hover:bg-coffee-400 hover-transition flex flex-col items-center'>
           <div className='mb-2'>
             <p className='text-7xl'>
               {item.unicode ? item.unicode : toSundanese(item.name)}

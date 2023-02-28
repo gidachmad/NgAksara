@@ -20,7 +20,7 @@ html {
 
 .button {
   @apply lg:min-w-[8rem] lg:w-2/5 w-full
-  bg-coffee-500 py-3 px-6 rounded-md 
+  bg-coffee-500 py-2 px-4 lg:py-3 lg:px-6 rounded-md 
   text-white text-center capitalize
   hover:bg-coffee-600 hover:shadow-md;
 }
@@ -34,5 +34,5 @@ html {
 }
 
 .header-style {
-  @apply text-center text-4xl mb-8;
+  @apply text-center text-2xl lg:text-4xl mb-8;
 }
