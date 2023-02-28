@@ -22,7 +22,7 @@ export const fiturText = [
   },
   {
     title: 'Konverter',
-    text: 'Ubah kalimat Latin ke dalam Aksara Sunda dalam bentuk format gambar yang bisa diunduh!',
+    text: 'Ubah kalimat Latin yang anda inginkan ke dalam Aksara Sunda!',
     img: 'konverter-dashboard',
     path: 'konverter',
   },
