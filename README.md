@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://ngaksara.vercel.app" target="blank"><img src="https://ngaksara.  vercel.app/assets/ngaksara-logo-8c7f11ec.png" width="320" alt="NgAksara Logo" /></a>
+  <a href="https://ngaksara.vercel.app" target="blank"><img src="https://ngaksara.vercel.app/assets/ngaksara-logo-8c7f11ec.png" width="320" alt="NgAksara Logo" /></a>
 </p>
 
 # NgAksara
