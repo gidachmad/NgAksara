@@ -21,7 +21,7 @@ Currently NgAksara at version 1.0 has these features
 
 ## :books: References And Credits
 
-- [Aksara Sunda Baku (Wikipedia ID)](https://id.wikipedia.org/wiki/Aksara_Sunda_Baku) => References for Sundanese Script :open_books:
+- [Aksara Sunda Baku (Wikipedia ID)](https://id.wikipedia.org/wiki/Aksara_Sunda_Baku) => References for Sundanese Script 📖
 - [Kairaga](https://www.kairaga.com/) => All about Sundanese Script is here :eyes:
 - [sunda.js](https://github.com/masnormen/sunda.js) => Library that starts this project :rocket:
 - [Nourman Hajar](https://github.com/masnormen) => Creator of Sunda.js :fire:
@@ -30,6 +30,6 @@ Currently NgAksara at version 1.0 has these features
 
 If you have any feedback, please reach out to me from one of these
 
-- :envelope: [Gmail](mailto:gaaf0809@gmail.com)
-- :iphone: [Telegram](https://web.telegram.org/k/#@gidachmad)
+- 📧 [Gmail](mailto:gaaf0809@gmail.com)
+- 📱 [Telegram](https://web.telegram.org/k/#@gidachmad)
 - :speech_balloon: [Instagram](https://www.instagram.com/gid_aaf*)
