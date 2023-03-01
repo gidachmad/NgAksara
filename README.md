@@ -1,4 +1,4 @@
-# NgAksara
+# NgAksara :sparkles: :indonesia:
 
 [NgAksara](https://ngaksara.vercel.app/) is a free website for learning Sundanese Script purposes. NgAksara is a form of effort to preserve Indonesian :indonesia: culture, especially Sundanese Script.
 
