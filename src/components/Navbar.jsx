@@ -14,8 +14,9 @@ export default function Navbar({ changeTheme, lightTheme }) {
       <div className='flex w-5/6 py-4 mx-auto items-center'>
         <Link to='/' className=''>
           <img
+            loading='lazy'
             src={ngaksaraLogo}
-            alt='Logo NgAksara'
+            alt='Logo NgAksara - Aksara Sunda'
             className='max-h-10 lg:max-h-14'
           />
         </Link>

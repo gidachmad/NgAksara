@@ -21,7 +21,12 @@ export default function DashboardText({ title, text, img, option }) {
             {text}
           </p>
           <div className='basis-2/5 pb-6 lg:pb-0'>
-            <img src={getImage(img)} alt={img} className='w-full' />
+            <img
+              loading='lazy'
+              src={getImage(img)}
+              alt={`image of ${img} in NgAksara - Aksara Sunda`}
+              className='w-full'
+            />
           </div>
         </article>
       </div>

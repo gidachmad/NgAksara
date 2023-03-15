@@ -16,8 +16,9 @@ export default function Kelas() {
           className='flex flex-col sm:flex-row px-8 py-10 md:py-20 mx-auto w-3/4 lg:w-3/5 justify-around items-center border-b-2 last:mb-10 last:border-0'>
           <div className='basis-2/5 mb-4'>
             <img
+              loading='lazy'
               src={getThumbnailKelas(kelas.name)}
-              alt=''
+              alt={`Thumbnail for ${kelas.name} in NgAksara - Aksara Sunda`}
               className='object-fill max-h-40 mx-auto'
             />
           </div>

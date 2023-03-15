@@ -11,7 +11,12 @@ export default function Dashboard() {
         <h1 className='text-center text-2xl md:text-3xl lg:text-4xl mb-10 lg:mb-20'>
           Selamat datang di NgAksara!
         </h1>
-        <img src={ngaksaraBanner} alt='' className='mb-5 lg:mb-10' />
+        <img
+          loading='lazy'
+          src={ngaksaraBanner}
+          alt='Banner of NgAksara - Aksara Sunda'
+          className='mb-5 lg:mb-10'
+        />
       </header>
 
       {dashboardText.map((item) => (
